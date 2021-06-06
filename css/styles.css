@@ -223,6 +223,7 @@ img {
   height: 120px;
   background-color: var(--light-bgd);
   border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .text {
@@ -244,19 +245,18 @@ img {
 .team {
   display: flex;
   justify-content: space-between;
-}
-.team li {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-
   background-color: var(--white-text);
 }
+.team > li {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .social-list {
-  height: 44px;
   display: flex;
-  justify-content: space-between;
-  padding: 16px 30px 30px 30px;
+  justify-content: center;
+}
+.social-list:not(:last-child) {
+  margin-right: 10px;
 }
 .team-social {
   display: flex;
@@ -277,7 +277,7 @@ img {
 }
 
 .team-desc {
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 .team-desc h3 {
   text-align: center;
@@ -287,6 +287,7 @@ img {
   line-height: 1.19;
   padding-top: 10px;
   text-align: center;
+  margin-bottom: 16px;
 }
 /* Клиенты */
 
